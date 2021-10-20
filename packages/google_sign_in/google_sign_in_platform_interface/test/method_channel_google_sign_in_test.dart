@@ -108,6 +108,7 @@ void main() {
           'scopes': <String>['two', 'scopes'],
           'signInOption': 'SignInOption.games',
           'clientId': 'fakeClientId',
+          'forceCodeForRefreshToken': false,
         }),
         () {
           googleSignIn.getTokens(

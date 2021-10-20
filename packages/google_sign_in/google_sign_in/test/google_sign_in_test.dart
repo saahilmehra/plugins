@@ -95,6 +95,7 @@ void main() {
             'scopes': <String>[],
             'hostedDomain': null,
             'clientId': fakeClientId,
+            'forceCodeForRefreshToken': false
           }),
           isMethodCall('signIn', arguments: null),
         ],
@@ -429,5 +430,6 @@ Matcher _isSignInMethodCall({String signInOption = 'SignInOption.standard'}) {
     'scopes': <String>[],
     'hostedDomain': null,
     'clientId': null,
+  'forceCodeForRefreshToken': false,
   });
 }
